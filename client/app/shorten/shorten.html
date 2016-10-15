@@ -1,6 +1,11 @@
 <div id='container'>
 <!-- Your code here -->
-
+  <form name="shortenLinkForm" ng-submit='addLink()'>
+    <input type="linkToShorten" ng-model='link'>
+    <button>Shorten</button>
+  </form>
+  {{errorText}}
+  <button ng-click="navToLinks()">Go to Links</button>
 </div>
 
 
